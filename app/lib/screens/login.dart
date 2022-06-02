@@ -7,9 +7,18 @@ class login_page extends StatelessWidget {
     return Scaffold(
         body: Stack(children: <Widget>[
       Container(
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage("images/login.png"), fit: BoxFit.cover))),
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [
+              Color(0xFFE2C1B9),
+              Color(0xFFD8DBD1),
+              Color(0xFFBCE9FD),
+            ],
+          ),
+        ),
+      ),
       Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(
