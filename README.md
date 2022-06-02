@@ -1,6 +1,10 @@
 # MLDLS App - The Designing to Development Journey
 
 ![Flutter](https://img.shields.io/badge/Flutter-FlutterFCA121?style=flat-square&logo=flutter)
+![Figma](https://img.shields.io/badge/-Figma-black?style=flat-square&logo=figma)
+![Dart](https://img.shields.io/badge/-Dart-blue?style=flat-square&logo=dart)
+![UI](https://img.shields.io/badge/-UI-red?style=flat-square&logo=design)
+![UX](https://img.shields.io/badge/-UX-pink?style=flat-square&logo=design)
 
 I've been working on Flutter since December 2021. Additionally, I recently caught interest in Product Designing. I asked myself, "What do I do?" And the answer was "BOTH". 
 This repository is all about me having hands-on with my designing skills in Figma and bringing it to life via Flutter :). 
