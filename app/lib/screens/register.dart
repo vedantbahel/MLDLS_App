@@ -1,55 +1,95 @@
-import 'package:app/screens/register.dart';
+import 'package:app/screens/login.dart';
 import 'package:flutter/material.dart';
 
-class login_page extends StatelessWidget {
+class register extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Stack(children: <Widget>[
-      Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topRight,
-            end: Alignment.bottomLeft,
-            colors: [
-              Color(0xFFE2C1B9),
-              Color(0xFFD8DBD1),
-              Color(0xFFBCE9FD),
-            ],
+      body: Stack(children: <Widget>[
+        Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+              colors: [
+                Color(0xFFE2C1B9),
+                Color(0xFFD8DBD1),
+                Color(0xFFBCE9FD),
+              ],
+            ),
           ),
         ),
-      ),
-      Scaffold(
-        backgroundColor: Colors.transparent,
-        body: SingleChildScrollView(
-          child: Padding(
-            padding: EdgeInsets.all(0.8),
+        Scaffold(
+          backgroundColor: Colors.transparent,
+          body: SingleChildScrollView(
+              child: Padding(
+            padding: const EdgeInsets.all(8.0),
             child: Center(
               child: Column(
                 children: [
-                  Text("\n \n"),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Image(
-                      image: AssetImage("images/logo.png"),
-                      width: 300,
-                      height: 150,
-                    ),
-                  ),
                   Padding(
                     padding: const EdgeInsets.all(40.0),
-                    child: Text("Welcome to MLDLS",
+                    child: Text("\nWelcome to MLDLS",
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Color.fromARGB(255, 255, 128, 54),
                             fontSize: 30)),
                   ),
-                  // Text("Login", style: TextStyle(fontSize: 20)),
                   Padding(
                     padding: const EdgeInsets.all(25.0),
                     child: Container(
                       child: Column(
                         children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: SizedBox(
+                              width: 400.0,
+                              height: 60.0,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                    enabledBorder: OutlineInputBorder(
+                                        borderSide: const BorderSide(
+                                            color: Colors.white, width: 2.0),
+                                        borderRadius:
+                                            BorderRadius.circular(20.0)),
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(20.0),
+                                    ),
+                                    fillColor: Colors.white.withOpacity(0.8),
+                                    filled: true,
+                                    labelText: 'First Name',
+                                    labelStyle: TextStyle(
+                                      color: Colors.black,
+                                    ),
+                                    hintText: "John"),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: SizedBox(
+                              width: 400.0,
+                              height: 60.0,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                    enabledBorder: OutlineInputBorder(
+                                        borderSide: const BorderSide(
+                                            color: Colors.white, width: 2.0),
+                                        borderRadius:
+                                            BorderRadius.circular(20.0)),
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(20.0),
+                                    ),
+                                    fillColor: Colors.white.withOpacity(0.8),
+                                    filled: true,
+                                    labelText: 'Last Name',
+                                    labelStyle: TextStyle(
+                                      color: Colors.black,
+                                    ),
+                                    hintText: "Doe"),
+                              ),
+                            ),
+                          ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: SizedBox(
@@ -108,7 +148,7 @@ class login_page extends StatelessWidget {
                               child: ElevatedButton(
                                 onPressed: () {},
                                 child: Text(
-                                  "Login",
+                                  "Sign Up",
                                   style: TextStyle(fontSize: 22),
                                 ),
                                 style: ButtonStyle(
@@ -128,14 +168,6 @@ class login_page extends StatelessWidget {
                               ),
                             ),
                           ),
-                          TextButton(
-                              onPressed: () {},
-                              child: Text(
-                                "Forgot Password?",
-                                style: TextStyle(
-                                    fontSize: 15,
-                                    color: Color.fromARGB(255, 87, 87, 87)),
-                              )),
                           Row(children: <Widget>[
                             Expanded(
                               child: new Container(
@@ -171,7 +203,7 @@ class login_page extends StatelessWidget {
                                         width: 30,
                                         height: 30,
                                         fit: BoxFit.fill),
-                                    Text("\t \t \t Log In with Google",
+                                    Text("\t \t \t Sign Up with Google",
                                         style: TextStyle(fontSize: 20)),
                                   ],
                                 ),
@@ -197,12 +229,12 @@ class login_page extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (BuildContext) => register(),
+                                    builder: (BuildContext) => login_page(),
                                   ),
                                 );
                               },
                               child: Text(
-                                "New User? Sign up",
+                                "Already have an account? Login",
                                 style: TextStyle(
                                     fontSize: 15,
                                     color: Color.fromARGB(255, 87, 87, 87)),
@@ -214,9 +246,9 @@ class login_page extends StatelessWidget {
                 ],
               ),
             ),
-          ),
-        ),
-      )
-    ]));
+          )),
+        )
+      ]),
+    );
   }
 }
