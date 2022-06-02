@@ -35,7 +35,7 @@ Following are some key feedbacks that I received:
 - Suggestion that I can use combination of two fonts
 - Suggestion for better illustrations (Icon8 Plugin on Figma)
 
-Thanks for suggestions and review to all who replied over my tweet and to those whom I reached out personally ([@0xSaurabh](https://twitter.com/0xSaurabh), [@dwvicy](https://twitter.com/dwvicy)) and [@Jpandya26](https://twitter.com/Jpandya26). 
+Thanks for suggestions and review to all who replied over my tweet and to those whom I reached out personally ([@0xSaurabh](https://twitter.com/0xSaurabh), [@dwvicy](https://twitter.com/dwvicy) and [@Jpandya26](https://twitter.com/Jpandya26)). 
 
 ## Destination 5 : Designing via Figma Draft 2 [31 May 2022]
 After implementing the suggested changes, the designed looked as follows:
