@@ -45,7 +45,8 @@ After implementing the suggested changes, the designed looked as follows:
 Although I believe, there will be some more iterations to my design but still I started coding the recent draft in flutter. As I improve my design, I can make the respective changes in flutter as well. 
 The code for flutter app can be found in this repository in the "app" folder. 
 
-### Sub-Destination 6.1 (In Progress)
-Designing the login page
+### Sub-Destination 6.1 :  Login Screen
+Designing the login page. 
+![Login Screen](images/login_screen.png)
 
 ## In Progres. Come back for updates. 
